@@ -9,6 +9,7 @@ public class PersistenceManager {
 
 	static {
 		caches.put(PersistenceConstants.IN_MEM_CACHE, new InMemCache());
+		caches.put(PersistenceConstants.DB_CACHE, new DbStore());
 	}
 
 	public static ObjectStore getCache(String cacheType) {
