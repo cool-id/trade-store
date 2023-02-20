@@ -1,0 +1,11 @@
+steps:
+  - name: maven:3.6.0-jdk-11-slim
+    entrypoint: 'mvn'
+    args: ['clean', 'install']
+#artifacts:
+#  mavenArtifacts:
+#  - repository: 'https://maven.pkg.dev/trade-store'
+#    path: 'target/trade-store-1.0.0-SNAPSHOT.jar'
+#    artifact_id: 'trade-store'
+#    group_id: 'com.sample.trade.store.project'
+#    version: '1.0.0-SNAPSHOT'
